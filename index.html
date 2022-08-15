@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Keyboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upperSide">
+            <div class="upperSide__leftField">
+                <ul class="fingersList">
+                    <li class="fingerList__item">
+                        <div class="finger finger__color--pinky"></div>Мизинец
+                    </li>
+                    <li class="fingerList__item">
+                        <div class="finger finger__color--ring"></div>Безымянный
+                    </li>
+                    <li class="fingerList__item">
+                        <div class="finger finger__color--middle"></div>Средний
+                    </li>
+                    <li class="fingerList__item">
+                        <div class="finger finger__color--indexLeft"></div>Указ. левый
+                    </li>
+                    <li class="fingerList__item">
+                        <spdivan class="finger finger__color--indexRight"></spdivan>Указ. правый
+                    </li>
+                    <li class="fingerList__item">
+                        <div class="finger finger__color--thumb"></div>Большой
+                    </li>
+                </ul>
+            </div>
+            <div class="upperSide__centerField">
+                <div class="progressLine">
+                    <div class="progressLine__caption">
+                        <div class="progressLine__caption--left">Прогресс</div>
+                        <div class="progressLine__caption--right">0/0</div>
+                    </div>
+                    <div class="progressLine__indicator">
+                        <div class="progressLine__indicator--past"></div>
+                    </div>
+                </div>
+                <div class="text textWrapper">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos aliquam incidunt omnis
+                    provident minus pariatur, magni, amet natus iusto accusantium reiciendis? Ab quae sapiente facere
+                    porro vel corporis repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    reprehenderit doloribus, blanditiis saepe neque dolorum officiis, cupiditate expedita labore tenetur
+                    molestias corporis provident itaque accusantium similique repellat quod eaque autem.
+                </div>
+            </div>
+            <div class="upperSide__rightField">
+                <div class="statistic">
+                    <div class="time">
+                        <h4 class="time__header">Время:</h4>
+                        <span class="time__result">00:00</span>
+                    </div>
+                    <div class="speed">
+                        <h4 class="speed_header">Скорость:</h4>
+                        <span class="speed__result"><span class="speed__result--value">00</span><br>зн/мин</span>
+                    </div>
+                    <div class="mistakes">
+                        <h4 class="mistakes_header">Ошибок:</h4>
+                        <span class="mistakes__result"><span class="mistakes__result--value">0/</span><span
+                                class="mistakes__result--percentage">00</span>%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="color menu__item menu__item--active" title="Coloring finger zones">
+                    <img class="color menu__img" src="./icons/color-a.svg">
+                    <img class="menu__imgDisactive" src="./icons/disactive-simbol.svg">
+                </li>
+
+                <li class="showNextButton menu__item menu__item--active" title="Next key coloring">
+                    <img class="showNextButton menu__img" src="./icons/letter-a.svg">
+                    <img class="menu__imgDisactive" src="./icons/disactive-simbol.svg">
+                </li>
+
+                <li class="letter menu__item menu__item--active" title="Keyboard labels display">
+                    <img class="letter menu__img" src="./icons/keyboard-key-a.svg">
+                    <img class="menu__imgDisactive" src="./icons/disactive-simbol.svg">
+                </li>
+
+                <li class="sound menu__item menu__item--active" title="Sound"><img class="sound menu__img"
+                        src="./icons/sound-a.svg"><img class="menu__imgDisactive" src="./icons/disactive-simbol.svg">
+                </li>
+
+                <li class="metronom menu__item menu__item--disactive" title="Mentronome"><img class="metronom menu__img"
+                        src="./icons/metronome-a.svg"><img class="menu__imgDisactive on"
+                        src="./icons/disactive-simbol.svg"></li>
+
+            </ul>
+            <form class="menu__Keyboard">
+                <div class="menu__laptop">
+                    <input class="menu__typeKeyboard" type="radio" id="laptop" name="keyboardType" value="laptop"
+                        checked>
+                    <img class="menu__img" src="icons/laptop.svg">
+                </div>
+                <div class="menu__pc">
+                    <input class="menu__typeKeyboard" type="radio" id="pc" name="keyboardType" value="pc">
+                    <img class="menu__img" src="./icons/keyboard.svg">
+                </div>
+            </form>
+        </nav>
+        <div class="keyboard">
+            <div class="keyboard__laptop rows">
+                <div class="keyboard__row">
+                    <div class="key key--colored" data-key="BACKQUOTE" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__main">~</p>
+                        <p class="key__label key__shift">`</p>
+                    </div>
+                    <div class="key key--colored" data-key="1" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">!</p>
+                        <p class="key__label key__main">1</p>
+                    </div>
+                    <div class="key key--colored" data-key="2" data-shifted="true" data-keyColor="#fdcf8c">
+                        <p class="key__label key__shift">@</p>
+                        <p class="key__label key__main">2</p>
+                    </div>
+                    <div class="key key--colored" data-key="3" data-shifted="true" data-keyColor="#bcdd9c">
+                        <p class="key__label key__shift">#</p>
+                        <p class="key__label key__main">3</p>
+                    </div>
+                    <div class="key key--colored" data-key="4" data-shifted="true" data-keyColor="#a3dce0">
+                        <p class="key__label key__shift">$</p>
+                        <p class="key__label key__main">4</p>
+                    </div>
+                    <div class="key key--colored" data-key="5" data-shifted="true" data-keyColor="#a3dce0">
+                        <p class="key__label key__shift">%</p>
+                        <p class="key__label key__main">5</p>
+                    </div>
+                    <div class="key key--colored" data-key="6" data-shifted="true" data-keyColor="#a3dce0">
+                        <p class="key__label key__shift">^</p>
+                        <p class="key__label key__main">6</p>
+                    </div>
+                    <div class="key key--colored" data-key="7" data-shifted="true" data-keyColor="#aec6e0">
+                        <p class="key__label key__shift">&</p>
+                        <p class="key__label key__main">7</p>
+                    </div>
+                    <div class="key key--colored" data-key="8" data-shifted="true" data-keyColor="#bcdd9c">
+                        <p class="key__label key__shift">*</p>
+                        <p class="key__label key__main">8</p>
+                    </div>
+                    <div class="key key--colored" data-key="9" data-shifted="true" data-keyColor="#fdcf8c">
+                        <p class="key__label key__shift">(</p>
+                        <p class="key__label key__main">9</p>
+                    </div>
+                    <div class="key key--colored" data-key="0" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">)</p>
+                        <p class="key__label key__main">0</p>
+                    </div>
+                    <div class="key key--colored" data-key="HYPHENMINUS" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">_</p>
+                        <p class="key__label key__main">-</p>
+                    </div>
+                    <div class="key key--colored" data-key="EQUALS" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">+</p>
+                        <p class="key__label key__main">=</p>
+                    </div>
+                    <div class="key key__textInside" data-key="BACKSPACE" data-shifted="false">
+                        <p class="key__label key__main">Backsp</p>
+                    </div>
+                    <div class="key key__textInside" data-key="INSERT" data-shifted="false">
+                        <p class="key__label key__main">Ins</p>
+                    </div>
+                    <div class="key key__textInside" data-key="HOME" data-shifted="false">
+                        <p class="key__label key__main">Home</p>
+                    </div>
+                    <div class="key key__textInside" data-key="PAGEUP" data-shifted="false">
+                        <p class="key__label key__main">Page<br>Up</p>
+                    </div>
+                    <div class="key key__textInside" data-key="NUMLOCK" data-shifted="false">
+                        <p class="key__label key__main">Num<br>Lock</p>
+                    </div>
+                    <div class="key key--colored" data-key="DIVIDE" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">/</p>
+                    </div>
+                    <div class="key key--colored" data-key="MULTIPLY" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">*</p>
+                    </div>
+                    <div class="key key--colored" data-key="SUBTRACT" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">-</p>
+                    </div>
+                </div>
+                <div class="keyboard__row">
+                    <div class="key  key__textInside" data-key="TAB" data-shifted="false">
+                        <p class="key__label key__main">Tab</p>
+                    </div>
+                    <div class="key key--colored" data-key="Q" data-shifted="false" data-keyColor="#f4b3c2">
+                        <p class="key__label key__main">q</p>
+
+                    </div>
+                    <div class="key key--colored" data-key="W" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">w</p>
+                    </div>
+                    <div class="key key--colored" data-key="E" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">e</p>
+                    </div>
+                    <div class="key key--colored" data-key="R" data-shifted="false" data-keyColor="#a3dce0">
+                        <p class="key__label key__main">r</p>
+                    </div>
+                    <div class="key key--colored" data-key="T" data-shifted="false" data-keyColor="#a3dce0">
+                        <p class="key__label key__main">t</p>
+                    </div>
+                    <div class="key key--colored" data-key="Y" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">y</p>
+                    </div>
+                    <div class="key key--colored" data-key="U" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">u</p>
+                    </div>
+                    <div class="key key--colored" data-key="I" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">i</p>
+                    </div>
+                    <div class="key key--colored" data-key="O" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">o</p>
+                    </div>
+                    <div class="key key--colored" data-key="P" data-shifted="false" data-keyColor="#f4b3c2">
+                        <p class="key__label key__main">p</p>
+                    </div>
+                    <div class="key key--colored" data-key="OPENBRACKET" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">{</p>
+                        <p class="key__label key__main">[</p>
+                    </div>
+                    <div class="key key--colored" data-key="CLOSEBRACKET" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">}</p>
+                        <p class="key__label key__main">]</p>
+                    </div>
+                    <div class="key key--colored" data-key="BACKSLASH" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">|</p>
+                        <p class="key__label key__main">\</p>
+                    </div>
+                    <div class="key key__textInside" data-key="DELETE" data-shifted="false">
+                        <p class="key__label key__main">Del</p>
+                    </div>
+                    <div class="key key__textInside" data-key="END" data-shifted="false">
+                        <p class="key__label key__main">End</p>
+                    </div>
+                    <div class="key key__textInside" data-key="PAGEDOWN" data-shifted="false">
+                        <p class="key__label key__main">Page<br>Down</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD7" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">7</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD8" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">8</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD9" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">9</p>
+                    </div>
+                    <div class="key__fake">
+                        <div class="key key--colored" data-key="ADD" data-shifted="false" data-keyColor="#fdcf8c">
+                            <p class="key__label key__main">+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard__row keyboard__row--3">
+                    <div class="key  key__textInside" data-key="CAPSLOCK" data-shifted="false">
+                        <p class="key__label key__main">Caps Lock</p>
+                    </div>
+                    <div class="key key--colored" data-key="A" data-shifted="false" data-keyColor="#f4b3c2">
+                        <p class="key__label key__main">a</p>
+
+                    </div>
+                    <div class="key key--colored" data-key="S" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">s</p>
+                    </div>
+                    <div class="key key--colored" data-key="D" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">d</p>
+                    </div>
+                    <div class="key key--colored" data-key="F" data-shifted="false" data-keyColor="#a3dce0">
+                        <p class="key__label key__main">f</p>
+                    </div>
+                    <div class="key key--colored" data-key="G" data-shifted="false" data-keyColor="#a3dce0">
+                        <p class="key__label key__main">g</p>
+                    </div>
+                    <div class="key key--colored" data-key="H" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">h</p>
+                    </div>
+                    <div class="key key--colored" data-key="J" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">j</p>
+                    </div>
+                    <div class="key key--colored" data-key="K" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">k</p>
+                    </div>
+                    <div class="key key--colored" data-key="L" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">l</p>
+                    </div>
+                    <div class="key key--colored" data-key="SEMICOLON" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">:</p>
+                        <p class="key__label key__main">;</p>
+                    </div>
+                    <div class="key key--colored" data-key="QUOTE" data-shifted="true" data-keyColor="#f4b3c2">
+                        <p class="key__label key__shift">"</p>
+                        <p class="key__label key__main">'</p>
+                    </div>
+                    <div class="key key__textInside" data-key="ENTER" data-shifted="false">
+                        <p class="key__label key__main">Enter</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD4" data-shifted="false" data-keyColor="#aec6e0">
+                        <p class="key__label key__main">4</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD5" data-shifted="false" data-keyColor="#bcdd9c">
+                        <p class="key__label key__main">5</p>
+                    </div>
+                    <div class="key key--colored" data-key="NUMPAD6" data-shifted="false" data-keyColor="#fdcf8c">
+                        <p class="key__label key__main">6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="key key__textInside key__shift--left" data-key="SHIFT" data-shifted="false">
+                    <p class="key__label key__main">Shift</p>
+                </div>
+                <div class="key key--colored" data-key="Z" data-shifted="false" data-keyColor="#f4b3c2">
+                    <p class="key__label key__main">z</p>
+                </div>
+                <div class="key key--colored" data-key="X" data-shifted="false" data-keyColor="#fdcf8c">
+                    <p class="key__label key__main">x</p>
+                </div>
+                <div class="key key--colored" data-key="C" data-shifted="false" data-keyColor="#bcdd9c">
+                    <p class="key__label key__main">c</p>
+                </div>
+                <div class="key key--colored" data-key="V" data-shifted="false" data-keyColor="#a3dce0">
+                    <p class="key__label key__main">v</p>
+                </div>
+                <div class="key key--colored" data-key="B" data-shifted="false" data-keyColor="#a3dce0">
+                    <p class="key__label key__main">b</p>
+                </div>
+                <div class="key key--colored" data-key="N" data-shifted="false" data-keyColor="#aec6e0">
+                    <p class="key__label key__main">n</p>
+                </div>
+                <div class="key key--colored" data-key="M" data-shifted="false" data-keyColor="#aec6e0">
+                    <p class="key__label key__main">m</p>
+                </div>
+                <div class="key key--colored" data-key="COMMA" data-shifted="true" data-keyColor="#bcdd9c">
+                    <p class="key__label key__shift"><</p>
+                            <p class="key__label key__main">,</p>
+                </div>
+                <div class="key key--colored" data-key="PERIOD" data-shifted="true" data-keyColor="#fdcf8c">
+                    <p class="key__label key__shift">></p>
+                    <p class="key__label key__main">.</p>
+                </div>
+                <div class="key key--colored" data-key="SLASH" data-shifted="true" data-keyColor="#f4b3c2">
+                    <p class="key__label key__shift">?</p>
+                    <p class="key__label key__main">/</p>
+                </div>
+                <div class="key key__textInside key__shift--right" data-key="SHIFT" data-shifted="false">
+                    <p class="key__label key__main">Shift</p>
+                </div>
+                <div class="key key__textInside" data-key="UP" data-shifted="false">
+                    <p class="key__label key__main">&#8593;</p>
+                </div>
+                <div class="key key--colored" data-key="NUMPAD1" data-shifted="false" data-keyColor="#aec6e0">
+                    <p class="key__label key__main">1</p>
+                </div>
+                <div class="key key--colored" data-key="NUMPAD2" data-shifted="false" data-keyColor="#bcdd9c">
+                    <p class="key__label key__main">2</p>
+                </div>
+                <div class="key key--colored" data-key="NUMPAD3" data-shifted="false" data-keyColor="#fdcf8c">
+                    <p class="key__label key__main">3</p>
+                </div>
+                <div class="key__fake">
+                    <div class="key key__textInside" data-key="ENTER" data-shifted="false">
+                        <p class="key__label key__main">Enter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="key key__textInside" data-key="CONTROL" data-shifted="false">
+                    <p class="key__label key__main">Ctrl</p>
+                </div>
+                <div class="key key__textInside" data-key="WIN" data-shifted="false">
+                    <p class="key__label key__main"></p>
+                </div>
+                <div class="key key__textInside" data-key="ALT" data-shifted="false">
+                    <p class="key__label key__main">Alt</p>
+                </div>
+                <div class="key key__textInside key--colored" data-key="SPACE" data-shifted="false"
+                    data-keyColor="#d2b4de">
+                    <p class="key__label key__main"></p>
+                </div>
+                <div class="key key__textInside" data-key="ALT" data-shifted="false">
+                    <p class="key__label key__main">Alt</p>
+                </div>
+                <div class="key key__textInside" data-key="CONTEXTMENU" data-shifted="false">
+                    <p class="key__label key__main"></p>
+                </div>
+                <div class="key key__textInside" data-key="CONTROL" data-shifted="false">
+                    <p class="key__label key__main">Ctrl</p>
+                </div>
+                <div class="key key__textInside" data-key="LEFT" data-shifted="false">
+                    <p class="key__label key__main">&#8592;</p>
+                </div>
+                <div class="key key__textInside" data-key="DOWN" data-shifted="false">
+                    <p class="key__label key__main">&#8595;</p>
+                </div>
+                <div class="key key__textInside" data-key="RIGHT" data-shifted="false">
+                    <p class="key__label key__main">&#8594;</p>
+                </div>
+                <div class="key key--colored" data-key="NUMPAD0" data-shifted="false" data-keyColor="#d2b4de">
+                    <p class="key__label key__main">0</p>
+                </div>
+                <div class="key key--colored" data-key="DECIMAL" data-shifted="false" data-keyColor="#fdcf8c">
+                    <p class="key__label key__main">.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="keyboard__pc">
+
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./typing.js"></script>
+<script type="module" src="./menu.js"></script>
+</html>
