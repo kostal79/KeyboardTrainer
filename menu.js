@@ -56,7 +56,7 @@ menu.addEventListener('click', chooseKeyboard)
 function chooseKeyboard(event) {
     if (event.target.tagName != 'INPUT') return;
     let keyboard = document.querySelector('input[name="keyboardType"]:checked').value
-    console.log(keyboard)
+
     //TODO: make changing of keyboard
 }
 
@@ -64,28 +64,28 @@ function setColor() {
     let keys = document.querySelectorAll('.key--colored');
     for (let key of keys) {
         let color = key.dataset.keycolor
-        key.setAttribute('style', `background-color: ${color}`)
+        key.style.backgroundColor = `${color}`;
     }
 }
 
 function clearColor() {
     let keys = document.querySelectorAll('.key--colored');
     for (let key of keys) {
-        key.setAttribute('style', 'background-color: white')
+        key.style.backgroundColor = 'white';
     }
 }
 
 function hideLetters() {
     let keys = document.querySelectorAll('.key__label')
     for (let key of keys) {
-        key.setAttribute('style', 'display: none')
+        key.style.display = 'none';
     }
 }
 
 function showLetters() {
     let keys = document.querySelectorAll('.key__label')
     for (let key of keys) {
-        key.setAttribute('style', 'display: block')
+        keykey.style.display = 'block';
     }
 }
 
