@@ -26,7 +26,7 @@ stepForward();//initial: first letter is imphasized
 function stepForward() {
     progressLine();//line color change
 
-    if (document.querySelector('.showNextButton.menu__item--active')) {
+    if (document.querySelector('.showNextButton.menu__item--active')&&text.currentIndex < text.contentOfText) {
         showTargetKey(text.currentIndex);//imphasize the key at the keyboard
     }
 
@@ -77,7 +77,7 @@ function timer() {
     function startTimer() {
         let min = '00';
         let sec = '00';
-        if (text.currentIndex <= text.lengthOfText()) {
+        if (text.currentIndex < text.lengthOfText()) {
             if (currentTime == 3599) {
                 clearInterval(setTime);
                 return;
@@ -87,14 +87,18 @@ function timer() {
             min = (Math.floor(currentTime / 60) < 10) ? '0' + Math.floor(currentTime / 60) : Math.floor(currentTime / 60);
             time.textContent = `${min}:${sec}`;
             if (currentTime % 10 === 0) {
-                text.speedResultField.textContent = Math.round(text.currentIndex / (currentTime / 60))
+                calcSpeed(currentTime);
             }
         } else {
+            calcSpeed(currentTime);
             clearInterval(setTime);
         }
     }
 }
 
+function calcSpeed(ms) {
+    text.speedResultField.textContent = Math.round(text.currentIndex / (ms / 60))
+}
 
 
 //color line progress
